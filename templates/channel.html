@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>Channels</title>
+    </head>
+    <body>
+        <form id="channel">
+            <input id="cname" autocomplete="off" autofocus placeholder="Channel name" type="text">
+            <input type="submit" value="Add new channel">
+        </form>
+        <br>
+        <div id="result"></div>
+    </body>
+</html>
