@@ -1,44 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-    const form = document.querySelector('#form')
-    form.onsubmit = () => {
-      alert("yaw")
-      // if (!localStorage.getItem('name')) {
-      //     console.log("here")
-      //     const name = document.querySelector('#dname').value;
-      //     localStorage.setItem('name',name);
-      //     alert('Name registered')
-      // }
-      // else {
-      //     alert('Name already registered');
-      // }
-      //
-      // const data = new FormData();
-      // data.append('name', name);
-      //
-      // // Send request.
-      // request.send(data);
-      return false;
-    }
 
 
-//     document.querySelector('#channel').onsubmit = (channels) => {
-//
-//         // Initialize new request
-//         const request = new XMLHttpRequest();
-//         const name = document.querySelector('#cname').value;
-//         let flag = false;
-//         for (i=0;i<channels.length,i++) {
-//             if (name == channels[i]) {
-//                 flag = true;
-//             }
-//         }
-//         if (flag) {
-//           alert('Channel already exists')
-//         }
-//         else {
-//           request.open('POST', '/channels');
-//         }
-//
-//
-});
+
+
+
+  //   sock = () => {
+  //
+  //   // Connect to websocket
+  //   var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
+  //
+  //   // When connected, configure buttons
+  //   socket.on('connect', () => {
+  //
+  //       // Each button should emit a "submit vote" event
+  //       document.querySelectorAll('button').forEach(button => {
+  //           button.onclick = () => {
+  //               const selection = button.dataset.vote;
+  //               socket.emit('submit vote', {'selection': selection});
+  //           };
+  //       });
+  //   });
+  //
+  //   // When a new vote is announced, add to the unordered list
+  //   socket.on('announce vote', data => {
+  //       const li = document.createElement('li');
+  //       li.innerHTML = `Vote recorded: ${data.selection}`;
+  //       document.querySelector('#votes').append(li);
+  //   };
+  // }

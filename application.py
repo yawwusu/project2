@@ -1,24 +1,23 @@
 import os
+import requests
 
-from flask import Flask, render_template, request
-from flask_socketio import SocketIO, emit
+from flask import Flask, jsonify, render_template, request
+# from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
-socketio = SocketIO(app)
+# socketio = SocketIO(app)
 
-
+# def main():
 @app.route("/")
 def index():
     return render_template("index.html")
 
-# @app.route("/channels", methods=["POST"])
-# def channels():
-#     dname = request.form.get("dname")
-#     return render_template("channel.html", dname=dname)
+# @socketio.on("submit vote")
+# def vote(data):
+#     selection = data["selection"]
+#     print(selection)
+#     emit("announce vote", {"selection": selection}, broadcast=True)
 
-
-
-
-if __name__ == "__main__":
-    socketio.run(app)
+# if __name__ == "__main__":
+#     socketio.run(app)
